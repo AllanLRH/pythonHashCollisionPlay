@@ -26,12 +26,12 @@ b = MyObject(2)
 c = MyObject(3)
 
 # Test the __eq__ method
-assert not a == b
-assert not a == c
-assert not b == c
+assert a != b
+assert a != c
+assert b != c
 
 # Test the __hash__ method
-assert not hash(b) == hash(c)
+assert hash(b) != hash(c)
 assert hash(a) == hash(c)
 
 my_set = set()
