@@ -18,7 +18,7 @@ class MyObject():
         return self.id_int % 2
 
     def __repr__(self):
-        return str(self.id_int)
+        return repr(self.id_int)
 
 
 a = MyObject(1)
