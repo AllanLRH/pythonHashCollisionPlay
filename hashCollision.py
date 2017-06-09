@@ -32,7 +32,6 @@ assert not b == c
 
 # Test the __hash__ method
 assert not hash(b) == hash(c)
-assert not hash(b) == hash(c)
 assert hash(a) == hash(c)
 
 my_set = set()
